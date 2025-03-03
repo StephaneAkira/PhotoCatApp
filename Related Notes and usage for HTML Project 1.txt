@@ -96,21 +96,27 @@ Here is an example linking to https://www.freecodecamp.org:
 Example Code
 <a href="https://www.freecodecamp.org"></a>
 
-A link's text must be placed between the opening and closing tags of an anchor (a) element.
+A link's text must be placed between the opening and closing tags of 
+an anchor (a) element.
 
-Here is an example of a link with the text click here to go to freeCodeCamp.org:
+Here is an example of a link with the text click here to go to 
+freeCodeCamp.org:
 
 <a href="https://www.freecodecamp.org">click here to go to freeCodeCamp.org</a>
 
-To open links in a new tab, you can use the target attribute on the anchor (a) element.
+To open links in a new tab, you can use the target attribute on the anchor 
+(a) element.
 
-The target attribute specifies where to open the linked document. target="_blank" opens the linked document in a new tab or window.
+The target attribute specifies where to open the linked document. 
+target="_blank" opens the linked document in a new tab or window.
 
 Here is the basic syntax for an a element with a target attribute:
 
 <a href="https://www.freecodecamp.org" target="_blank">freeCodeCamp</a>
 
-In previous steps you used an anchor element to turn text into a link. Other types of content can also be turned into a link by wrapping it in anchor tags.
+In previous steps you used an anchor element to turn text into a link. 
+Other types of content can also be turned into a link by wrapping it 
+in anchor tags.
 
 Here is an example of turning an image into a link:
 
@@ -118,7 +124,8 @@ Here is an example of turning an image into a link:
   <img src="image-link.jpg" alt="A photo of a cat.">
 </a>
 
-Before adding any new content, you should make use of a section element to separate the cat photos content 
+Before adding any new content, you should make use of a section element 
+to separate the cat photos content 
 from the future content.
 
 The section element is used to define sections in a document, 
@@ -133,7 +140,8 @@ Example:
 </section>
 
 NB:
-When you add a lower rank heading element to the page, it's implied that you're starting a new subsection.
+When you add a lower rank heading element to the page, 
+it's implied that you're starting a new subsection.
 
 The li element is used to create a list item in an ordered or unordered list.
 
@@ -148,9 +156,11 @@ The code for an ordered list (ol) is similar to an unordered list,
 but list items in an ordered list are numbered when displayed.
 
 
-The figure element represents self-contained content and will allow you to associate an image with a caption.
+The figure element represents self-contained content and will allow you 
+to associate an image with a caption.
 
-A figure caption (figcaption) element is used to add a caption to describe the image contained within the figure element.
+A figure caption (figcaption) element is used to add a caption 
+to describe the image contained within the figure element.
 
 Here is an example of a figcaption element with the caption of A cute cat:
 
@@ -159,64 +169,82 @@ Here is an example of a figcaption element with the caption of A cute cat:
   <figcaption>A cute cat</figcaption>
 </figure>
 
-NB: referer to the example above whenenver you're working with images : figure,img,figcaption 
+NB: referer to the example above whenenver you're working with images 
+: figure,img,figcaption 
 
-To place emphasis on a specific word or phrase, you can use the em element.
+To place emphasis on a specific word or phrase, 
+you can use the em element.
 
-Emphasize the word love in the figcaption element by wrapping it in an emphasis em element.
+Emphasize the word love in the figcaption element by wrapping it in 
+an emphasis em element.
 
-The strong element is used to indicate that some text is of strong importance or urgent.
+The strong element is used to indicate that some text is of strong 
+importance or urgent.
 
 Now you will add a web form to collect information from users.
 
-The form element is used to get information from a user like their name, email, and other details.
+The form element is used to get information from a user like 
+their name, email, and other details.
 
 The action attribute indicates where form data should be sent.
 
 Here is an example of a form element with an action attribute:
 
 <form action="/submit-url"></form>
-In the example, action="/submit-url" tells the browser that the form data should be sent to the path /submit-url.
+In the example, action="/submit-url" tells the browser that the form data 
+should be sent to the path /submit-url.
 
 The input element allows you several ways to collect data from a web form. 
-Like img elements, input elements are a void element and do not need closing tags.
+Like img elements, input elements are a void element and do not need 
+closing tags.
 
 There are many kinds of inputs you can create using the type attribute. 
-You can easily create a password field, reset button, or a control to let users select a file from their computer.
+You can easily create a password field, 
+reset button, or a control to let users select a file from their computer.
 
-In order for a form's data to be accessed by the location specified in the action attribute, 
-you must give the text field a name attribute and assign it a value to represent the data being submitted.
+In order for a form's data to be accessed by the location specified 
+in the action attribute, 
+you must give the text field a name attribute and assign it a value 
+to represent the data being submitted.
 
 input type="text" name="name">
 
-Placeholder text is used to give people a hint about what kind of information to enter into an input.
+Placeholder text is used to give people a hint about what kind of 
+information to enter into an input.
 
-Here is an example of an input element with a placeholder set to Ex. Jane Doe:
+Here is an example of an input element with a placeholder set to 
+Ex. Jane Doe:
 
 Example Code
 <input type="text" placeholder="Ex. Jane Doe">
 
-To prevent a user from submitting your form when required information is missing, 
+To prevent a user from submitting your form when required information 
+is missing, 
 you need to add the required attribute to an input element. 
 There's no need to set a value to the required attribute. Instead, 
-just add the word required to the input element, making sure there is space between it and other attributes.
+just add the word required to the input element, 
+making sure there is space between it and other attributes.
 
 The button element is used to create a clickable button.
-The default behavior of clicking a form button without any attributes submits the form to the location 
-specified in the form's action attribute.
+The default behavior of clicking a form button without any attributes 
+submits the form to the location specified in the form's action attribute.
 
 Even though you added your button below the text input, 
-they appear next to each other on the page. That's because both input and button elements are inline elements, 
+they appear next to each other on the page. 
+That's because both input and button elements are inline elements, 
 which don't appear on new lines.
 
-You can use radio buttons for questions where you want only one answer out of multiple options.
+You can use radio buttons for questions where you want only one answer out 
+of multiple options.
 
 Here is an example of a radio button with the text set as cat:
 
 Example Code
 <input type="radio"> cat
 
-label elements are used to help associate the text for an input element with the input element itself (especially for assistive technologies like screen readers).
+label elements are used to help associate the text for an input element 
+with the input element itself 
+(especially for assistive technologies like screen readers).
 
 Here is an example of a label element with a radio button:
 
@@ -224,7 +252,8 @@ Example Code
 <label><input type="radio"> cat</label>
 In the example, clicking on the word "cat" will also select the radio button.
 
-The id attribute is used to identify specific HTML elements. Each id attribute's value must be unique 
+The id attribute is used to identify specific HTML elements. 
+Each id attribute's value must be unique 
 from all other id values for the entire page.
 
 Here is an example of an input element with an id attribute:
@@ -246,22 +275,29 @@ Example Code
 If you select the Indoor radio button and submit the form, 
 the form data for the button is based on its name and value attributes. 
 Since your radio buttons do not have a value attribute, 
-the form data will include indoor-outdoor=on, which is not useful when you have multiple buttons.
+the form data will include indoor-outdoor=on, 
+which is not useful when you have multiple buttons.
 
 Add a value attribute to both radio buttons. For convenience, 
 set the button's value attribute to the same value as its id attribute.
 
-The fieldset element is used to group related inputs and labels together in a web form. 
-fieldset elements are block-level elements, meaning that they appear on a new line.
+The fieldset element is used to group related inputs and labels together 
+in a web form. 
+fieldset elements are block-level elements, 
+meaning that they appear on a new line.
 
 The legend element acts as a caption for the content in the fieldset element. 
-It gives users context about what they should enter into that part of the form.
+It gives users context about what they should enter into that part of 
+the form.
 
-Forms commonly use checkboxes for questions that may have more than one answer. 
+Forms commonly use checkboxes for questions that may have more 
+than one answer. 
 The input element with a type attribute set to checkbox creates a checkbox.
 
-There's another way to associate an input element's text with the element itself. 
-You can nest the text within a label element and add a for attribute with the same value as 
+There's another way to associate an input element's text 
+with the element itself. 
+You can nest the text within a label element and add a for attribute 
+with the same value as 
 the input element's id attribute.
 
 Given an input element as below:
@@ -270,18 +306,23 @@ Given an input element as below:
 An example of a label element that is associated to this input element is:
 
 Example Code
-Associate the text Loving with the checkbox by nesting only the text Loving in a label element 
+Associate the text Loving with the checkbox by nesting only the text 
+Loving in a label element 
 and giving it an appropriate for attribute.
 
 Example code :
 <input type="checkbox" name="personality" id="energetic">
             <label for="energetic">Energetic</label>
 
-Like radio buttons, form data for selected checkboxes are name / value attribute pairs. 
-While the value attribute is optional, it's best practice to include it with any checkboxes or radio buttons on the page.
+Like radio buttons, 
+form data for selected checkboxes are name / value attribute pairs. 
+While the value attribute is optional, 
+it's best practice to include it with any checkboxes or radio buttons 
+on the page.
 
 
-In order to make a checkbox checked or radio button selected by default, you need to add the checked attribute to it.
+In order to make a checkbox checked or radio button selected by default, 
+you need to add the checked attribute to it.
 
 Here is an example of a radio button with the checked attribute:
 
@@ -292,23 +333,34 @@ The footer element is used to define a footer for a document or section.
 A footer typically contains information about the author of the document, 
 copyright data, links to terms of use, contact information, and more.
 
-Notice that everything you've added to the page so far is inside the body element. 
-All page content elements that should be rendered to the page go inside the body element. 
+Notice that everything you've added to the page so far is inside the 
+body element. 
+All page content elements that should be rendered to the page go inside 
+the body element. 
 However, other important information goes inside the head element.
 
-The head element is used to contain metadata about the document, such as its title, links to stylesheets, and scripts. 
-Metadata is information about the page that isn't displayed directly on the page.
+The head element is used to contain metadata about the document, 
+such as its title, links to stylesheets, and scripts. 
+Metadata is information about the page that isn't displayed 
+directly on the page.
 
-Notice that the entire contents of the page are nested within an html element. 
-The html element is the root element of an HTML page and wraps all content on the page.
+Notice that the entire contents of the page are nested within 
+an html element. 
+The html element is the root element of an HTML page and wraps 
+all content on the page.
 
-You can also specify the language of your page by adding the lang attribute to the html element.
+You can also specify the language of your page by adding the lang attribute 
+to the html element.
 
-All pages should begin with <!DOCTYPE html>. This special string is known as a declaration and ensures the browser tries to meet industry-wide specifications.
+All pages should begin with <!DOCTYPE html>. 
+This special string is known as a declaration and ensures the browser 
+tries to meet industry-wide specifications.
 
-<!DOCTYPE html> tells browsers that the document is an HTML5 document which is the latest version of HTML.
+<!DOCTYPE html> tells browsers that the document is an HTML5 document 
+which is the latest version of HTML.
 
-You can set browser behavior by adding meta elements in the head. Here's an example:
+You can set browser behavior by adding meta elements in the head. 
+Here's an example:
 
 Example Code
 <meta attribute="value">
